@@ -1,0 +1,50 @@
+:root {
+  --base: #333333;
+  --base-light: #575757;
+  --base-lighter: #7e7e7e;
+  --base-lightest: #a7a7a7;
+  --base-offset: #d2d2d2;
+  --base-accent: #00c896;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: var(--base);
+  color: var(--base-offset);
+}
+
+.container-boundaries {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-accent {
+  color: var(--base-accent);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --base: #d2d2d2;
+    --base-light: #a7a7a7;
+    --base-lighter: #7e7e7e;
+    --base-lightest: #575757;
+    --base-offset: #333333;
+    --base-accent: #00c896;
+  }
+}

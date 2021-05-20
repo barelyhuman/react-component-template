@@ -1,0 +1,52 @@
+{
+  "name": "react-component-template",
+  "version": "0.0.0",
+  "description": "Simple template to work with on react components",
+  "license": "MIT",
+  "repository": "barelyhuman/react-component-template",
+  "author": {
+    "name": "Reaper",
+    "email": "ahoy@barelyhuman.dev",
+    "url": "https://reaper.im"
+  },
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "./dist/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "babel 'source' --out-dir=dist",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "reaper",
+    "template",
+    "barelyhuman",
+    "react",
+    "component"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "styled-jsx/babel"
+    ]
+  },
+  "dependencies": {
+    "styled-jsx": "^3.4.4"
+  }
+}
